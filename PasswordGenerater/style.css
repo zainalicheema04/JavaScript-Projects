@@ -1,0 +1,35 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Input fields and checkboxes */
+input[type="number"],
+input[type="checkbox"] {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Generate button */
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Password input field */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}

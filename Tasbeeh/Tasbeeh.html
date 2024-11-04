@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbeeh</title>
+    <style>
+        /* Basic styling for the tasbeeh */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .tasbeeh-container {
+            margin: 20px auto;
+            padding: 70px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            margin-top: 25vh;
+        }
+        #counter {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px ;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="tasbeeh-container">
+        <div id="counter">'0' </div>
+        <div class="buttons">
+            <button id="increment">Increment</button>
+            <button id="decrement">Decrement</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        let counter = 0;
+        let intervalId;
+
+        const incrementButton = document.getElementById("increment");
+        const decrementButton = document.getElementById("decrement");
+        const resetButton = document.getElementById("reset");
+        const counterElement = document.getElementById("counter");
+
+        incrementButton.addEventListener("click", () => {
+            counter++;
+            updateCounter();
+            // counterElement.innerHTML=counter;
+        });
+
+        decrementButton.addEventListener("click", () => {
+            if (counter > 0) {
+                counter--;
+                updateCounter();
+                // counterElement.innerHTML=counter;
+            }
+        });
+
+        resetButton.addEventListener("click", () => {
+       location.reload();
+        });
+
+        function updateCounter() {
+            counterElement.textContent = counter;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+height: 97vh;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-image: linear-gradient(to bottom right, purple, rgb(0, 140, 255));
+font-family: 'Courier New', Courier, monospace;
+}
+.texttospeek{
+border: 2px solid white;
+text-align: center;
+padding: 30px;
+border-radius: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+label{
+    font-size: 3rem;
+    color: white;
+}
+button{
+    padding: 10px 90px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 100, 200);
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+#click_to_convert{
+    padding: 10px 30px;
+}
+
+
+.speakToText{
+border: 2px solid white;
+text-align: center;
+padding: 30px;
+border-radius: 10px;
+}
+.conver_text{
+    width: 600px;
+    text-align: center;
+}

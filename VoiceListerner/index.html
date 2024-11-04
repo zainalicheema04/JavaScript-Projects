@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="texttospeek">
+        <label>Text To Speech</label>
+        <br>
+    <textarea id="myTextarea" placeholder="Enter Text Here..." cols="45" rows="10"></textarea>
+    <br>
+    <button onclick="speak()">Speak</button>
+    </div>
+
+    <div class="speakToText">
+        <label>Voice To Text</label>
+        <br>
+        <textarea placeholder="Speech SomeThing..."  cols="45" rows="10" id="conver_text"></textarea>
+        <br>
+        <button id="click_to_convert">Click To Speak</button>
+        <button id="click_to_convert" onclick="CopyText()">CopyText</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
